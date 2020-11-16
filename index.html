@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB44V3-0DEkiWqtP3AIS5ImqXWK8dcP-wI&libraries=places"></script>
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Password Strength Indicator | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>Register</header>
+      <form action="#">
+        <div class="userfield" >
+            <input  type="text" placeholder="Enter Username">
+          </div><br>
+  
+        <div class="field">
+          <input onkeyup="trigger()" type="password" class="fieldInput" placeholder="Enter password">
+          <span class="showBtn"><i class="fa fa-eye"></i></span>
+        </div><br>
+<div class="indicator">
+          <span class="weak"></span>
+          <span class="medium"></span>
+          <span class="strong"></span>
+        </div><br>
+        <div class="submitfield">
+            <Button  type="submit" value="submit">Submit</Button>
+          </div><br>
+  
+<div class="text"></div>
+</form>
+</div>
+  </body>
+  <script src="app.js"></script>
+</html>
